@@ -1,0 +1,26 @@
+<!--Form-->
+<form ng-submit="createUser()">
+  <h4>Edit User</h4>
+  <div class="form-group">
+    <label class="control-label col-md-2">First Name: </label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" ng-model="user.FirstName" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-md-2">Last Name:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" ng-model="user.LastName" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-md-2">Job Title:</label>
+    <div class="col-md-4">
+        <input type="text" class="form-control" ng-model="user.JobTitle" />
+    </div>
+  </div>
+  <div class="col-md-offset-2 col-md-10">
+  <input type="button" value="update" ng-click="updateUser(user)" class="btn btn-success btn-sm" />
+  </div>
+</form>
+<!--End Form-->
